@@ -1,0 +1,38 @@
+[
+    {
+        "teacher_name": "Ivan",
+        "lesson": "Java",
+        "classroom": 409,
+        "day": "Monday"
+    },
+    {
+        "teacher_name": "Eugene",
+        "lesson": "Big Data",
+        "classroom": 101,
+        "day": "Tuesday"
+    },
+    {
+        "teacher_name": "Mark",
+        "lesson": "Business Analysis",
+        "classroom": 421,
+        "day": "Wednesday"
+    },
+    {
+        "teacher_name": "John",
+        "lesson": "Math",
+        "classroom": 203,
+        "day": "Thursday"
+    },
+    {
+        "teacher_name": "Alexey",
+        "lesson": "Machine Learning",
+        "classroom": 404,
+        "day": "Friday"
+    },
+    {
+        "teacher_name": "Sam",
+        "lesson": "QA Engineering",
+        "classroom": 310,
+        "day": "Saturday"
+    }
+]

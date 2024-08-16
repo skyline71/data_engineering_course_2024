@@ -3,6 +3,8 @@
 import yaml
 import json
 import pandas as pd
+import sys
+sys.path.append('..')
 
 
 class Schedule:
@@ -22,39 +24,60 @@ class Schedule:
         ]
 
     def write_yaml(self, file: str):
-        with open(file, 'w') as f:
-            yaml.dump(self.__schedule, f)
+        try:
+            with open(file, 'w') as f:
+                yaml.dump(self.__schedule, f)
+        except Exception as e:
+            print(f'File name should be string ({e})')
 
     def read_yaml(self, file: str):
-        with open(file, 'r') as f:
-            self.__yaml_output = yaml.load(f, Loader=yaml.FullLoader)
-        return self.__yaml_output
+        try:
+            with open(file, 'r') as f:
+                self.__yaml_output = yaml.load(f, Loader=yaml.FullLoader)
+            return self.__yaml_output
+        except FileNotFoundError:
+            print(f'File {file} not found')
+            return None
 
     def print_yaml_output(self):
         for day in self.__yaml_output:
             print(day)
 
     def write_json(self, file: str):
-        with open(file, 'w') as f:
-            json_object = json.dumps(self.__schedule, indent=4)
-            f.write(json_object)
+        try:
+            with open(file, 'w') as f:
+                json_object = json.dumps(self.__schedule, indent=4)
+                f.write(json_object)
+        except Exception as e:
+            print(f'File name should be string ({e})')
 
     def read_json(self, file: str):
-        with open(file, 'r') as f:
-            self.__json_output = json.load(f)
-        return self.__json_output
+        try:
+            with open(file, 'r') as f:
+                self.__json_output = json.load(f)
+            return self.__json_output
+        except FileNotFoundError:
+            print(f'File {file} not found')
+            return None
 
     def print_json_output(self):
         for day in self.__json_output:
             print(day)
 
     def write_csv(self, file: str):
-        df = pd.DataFrame(self.__schedule)
-        df.to_csv(file, index=False)
+        try:
+            df = pd.DataFrame(self.__schedule)
+            df.to_csv(file, index=False)
+        except Exception as e:
+            print(f'File name should be string ({e})')
 
     def read_csv(self, file: str):
-        self.__csv_output = pd.read_csv(file)
-        return self.__csv_output
+        try:
+            self.__csv_output = pd.read_csv(file)
+            return self.__csv_output
+        except FileNotFoundError:
+            print(f'File {file} not found')
+            return None
 
     def print_csv_output(self):
         print(self.__csv_output)
@@ -71,37 +94,46 @@ print('')
 
 # Task 2
 print('Task 2:')
-schedule.write_yaml('yaml_data.yaml')
-schedule.read_yaml('yaml_data.yaml')
+schedule.write_yaml('config/yaml_data.yaml')
+schedule.read_yaml('config/yaml_data.yaml')
 schedule.print_yaml_output()
 print('')
 
 # Task 3
 print('Task 3:')
-schedule.write_json('json_data.json')
-schedule.read_json('json_data.json')
+schedule.write_json('Utils/json_data.json')
+schedule.read_json('Utils/json_data.json')
 schedule.print_json_output()
 print('')
 
 # Task 4
 print('Task 4:')
-schedule.write_csv('csv_data.csv')
-schedule.read_csv('csv_data.csv')
+schedule.write_csv('Utils/csv_data.csv')
+schedule.read_csv('Utils/csv_data.csv')
 schedule.print_csv_output()
 print('')
 
 # Task 5
 print('Task 5:')
-yaml_data = schedule.read_yaml('yaml_data.yaml')
-schedule.write_json('yaml_to_json_data.json')
-schedule.read_json('yaml_to_json_data.json')
+yaml_data = schedule.read_yaml('config/yaml_data.yaml')
+schedule.write_json('Utils/yaml_to_json_data.json')
+schedule.read_json('Utils/yaml_to_json_data.json')
 schedule.print_json_output()
 print('')
 
 # Task 6
 print('Task 6:')
-json_data = schedule.read_json('json_data.json')
-schedule.write_yaml('json_to_yaml_data.yaml')
-schedule.read_yaml('json_to_yaml_data.yaml')
+json_data = schedule.read_json('Utils/json_data.json')
+schedule.write_yaml('config/json_to_yaml_data.yaml')
+schedule.read_yaml('config/json_to_yaml_data.yaml')
 schedule.print_yaml_output()
 print('')
+
+# Exceptions
+print('Exceptions:')
+schedule.write_yaml(123)
+schedule.write_json(345)
+schedule.write_csv(777)
+schedule.read_yaml('yaml_data.yaml')
+schedule.read_json('json_data.json')
+schedule.read_csv('csv_data.csv')

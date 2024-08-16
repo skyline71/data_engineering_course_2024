@@ -1,0 +1,7 @@
+city,country,localtime,current_temp_c,forecast_date,forecast_temp_c
+Lissabon,Portugal,2024-08-16 23:47,26.3,2024-08-17,24.5
+Chicago,United States of America,2024-08-16 17:47,29.4,2024-08-17,21.5
+Budapest,Hungary,2024-08-17 00:47,27.0,2024-08-18,30.4
+Stockholm,Sweden,2024-08-17 00:47,15.3,2024-08-18,16.4
+Tokyo,Japan,2024-08-17 07:47,30.3,2024-08-18,29.5
+Moscow,Russia,2024-08-17 01:47,16.2,2024-08-18,21.3

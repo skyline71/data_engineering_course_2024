@@ -1,0 +1,24 @@
+- classroom: 409
+  day: Monday
+  lesson: Java
+  teacher_name: Ivan
+- classroom: 101
+  day: Tuesday
+  lesson: Big Data
+  teacher_name: Eugene
+- classroom: 421
+  day: Wednesday
+  lesson: Business Analysis
+  teacher_name: Mark
+- classroom: 203
+  day: Thursday
+  lesson: Math
+  teacher_name: John
+- classroom: 404
+  day: Friday
+  lesson: Machine Learning
+  teacher_name: Alexey
+- classroom: 310
+  day: Saturday
+  lesson: QA Engineering
+  teacher_name: Sam

@@ -1,20 +1,27 @@
-# Lesson 12: API requests: GET, POST
+# Lesson 12: API requests: GET
 
+from config.global_config import CURRENCY_API_KEY
 import requests
 import pandas as pd
+import sys
+sys.path.append('..')
 
 # Task 1
 print('Task 1:')
 url = 'https://api.currencylayer.com/change'
-access_key = 'bcd88a353251608d60e9091b6d7847a1'
+access_key = CURRENCY_API_KEY
 currencies = 'USD,RUB,EUR'
 start_date = '2024-08-13'
 end_date = '2024-08-13'
+
 
 api_request = f'{url}?access_key={access_key}&currencies={currencies}&start_date={start_date}&end_date={end_date}'
 
 r = requests.get(url=api_request)
 result = r.json()
+print(r)
+print(type(r))
+print(r.text)
 print(result)
 print(type(result))
 print('')
@@ -23,7 +30,7 @@ print('')
 print('Task 2:')
 currencies_list = list()
 
-for i in range(1,31):
+for i in range(1, 31):
     if i < 10:
         start_date = end_date = f'2024-07-0{i}'
     else:
@@ -45,6 +52,6 @@ for i in range(1,31):
 
 print(currencies_list)
 df = pd.DataFrame(currencies_list)
-df.to_csv('currencies.csv', index=False)
-data_output = pd.read_csv('currencies.csv')
+df.to_csv('./Utils/currencies.csv', index=False)
+data_output = pd.read_csv('Utils/currencies.csv')
 print(data_output)
