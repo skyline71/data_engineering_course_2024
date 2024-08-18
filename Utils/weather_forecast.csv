@@ -1,7 +1,57 @@
-city,country,localtime,current_temp_c,forecast_date,forecast_temp_c
-Lissabon,Portugal,2024-08-16 23:47,26.3,2024-08-17,24.5
-Chicago,United States of America,2024-08-16 17:47,29.4,2024-08-17,21.5
-Budapest,Hungary,2024-08-17 00:47,27.0,2024-08-18,30.4
-Stockholm,Sweden,2024-08-17 00:47,15.3,2024-08-18,16.4
-Tokyo,Japan,2024-08-17 07:47,30.3,2024-08-18,29.5
-Moscow,Russia,2024-08-17 01:47,16.2,2024-08-18,21.3
+city,country,localtime,current_temp_c,forecast_date,forecast_temp_c,wind_speed_kph,condition
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-18,27.8,33.1,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-18,23.8,23.4,Patchy rain nearby
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-18,35.5,19.4,Patchy rain nearby
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-18,21.6,20.2,Sunny
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-18,33.2,16.9,Moderate rain
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-18,27.5,18.4,Patchy rain nearby
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-18,21.0,20.5,Patchy rain nearby
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-18,21.1,25.6,Patchy rain nearby
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-19,27.8,31.7,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-19,23.8,24.1,Patchy rain nearby
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-19,33.3,13.3,Sunny
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-19,21.5,16.2,Sunny
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-19,32.1,17.3,Moderate rain
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-19,28.0,11.2,Patchy rain nearby
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-19,24.4,16.9,Sunny
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-19,20.2,20.5,Patchy rain nearby
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-20,27.9,34.2,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-20,21.9,20.2,Sunny
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-20,35.5,19.1,Patchy rain nearby
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-20,22.4,16.9,Sunny
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-20,33.8,17.3,Patchy rain nearby
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-20,21.0,12.2,Patchy rain nearby
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-20,19.2,12.6,Patchy rain nearby
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-20,20.8,8.3,Patchy rain nearby
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-21,25.9,25.9,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-21,23.7,11.5,Sunny
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-21,31.3,24.8,Sunny
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-21,20.2,21.2,Moderate rain
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-21,30.6,20.5,Patchy rain nearby
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-21,25.7,15.1,Sunny
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-21,22.3,21.6,Partly Cloudy 
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-21,22.1,15.5,Patchy rain nearby
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-22,24.8,28.8,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-22,26.3,11.2,Sunny
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-22,30.9,16.6,Sunny
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-22,21.4,20.2,Partly Cloudy 
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-22,28.7,15.5,Patchy rain nearby
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-22,29.2,25.6,Patchy rain nearby
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-22,22.0,12.2,Sunny
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-22,18.4,21.6,Patchy rain nearby
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-23,26.2,28.1,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-23,30.9,14.0,Sunny
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-23,36.5,7.9,Sunny
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-23,18.7,23.4,Patchy rain nearby
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-23,31.3,29.5,Patchy rain nearby
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-23,24.1,14.4,Sunny
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-23,23.2,11.9,Partly Cloudy 
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-23,19.9,22.7,Patchy rain nearby
+Lisbon,Portugal,2024-08-18 11:43,26.4,2024-08-24,27.1,28.8,Sunny
+Chicago,United States of America,2024-08-18 05:43,20.6,2024-08-24,33.0,19.4,Sunny
+Budapest,Hungary,2024-08-18 12:43,28.1,2024-08-24,39.4,14.8,Patchy rain nearby
+Stockholm,Sweden,2024-08-18 12:43,20.2,2024-08-24,20.5,28.8,Partly Cloudy 
+Tokyo,Japan,2024-08-18 19:43,30.2,2024-08-24,32.4,31.0,Patchy rain nearby
+Moscow,Russia,2024-08-18 13:43,24.1,2024-08-24,26.5,13.3,Sunny
+Kazan,Russia,2024-08-18 13:43,22.4,2024-08-24,23.0,21.6,Partly Cloudy 
+Omsk,Russia,2024-08-18 16:43,21.3,2024-08-24,13.1,25.2,Patchy rain nearby

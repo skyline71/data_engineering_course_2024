@@ -12,6 +12,7 @@ class Weather:
                 raise TypeError
         except TypeError:
             print('City name must be string')
+            return None
 
     def remove_city(self, city_name: str):
         try:
@@ -21,6 +22,7 @@ class Weather:
                 raise TypeError
         except TypeError:
             print('City name must be string')
+            return None
 
     def get_cities_list(self):
         return self.__cities

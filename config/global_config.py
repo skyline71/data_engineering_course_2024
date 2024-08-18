@@ -1,2 +1,3 @@
 CURRENCY_API_KEY = 'bcd88a353251608d60e9091b6d7847a1'
 WEATHER_API_KEY = '7b24229ac3fc45abaec192709241608'
+WEATHER_API_URL = 'http://api.weatherapi.com/v1/forecast.json'

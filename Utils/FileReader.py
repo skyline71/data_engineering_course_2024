@@ -18,8 +18,8 @@ class FileReader:
             with open(file, 'r') as f:
                 self.__yaml_output = yaml.load(f, Loader=yaml.FullLoader)
             return self.__yaml_output
-        except FileNotFoundError:
-            print(f'File {file} not found')
+        except Exception as e:
+            print(f'File {file} not found ({e})')
             return None
 
     def read_json(self, file: str):
@@ -27,14 +27,14 @@ class FileReader:
             with open(file, 'r') as f:
                 self.__json_output = json.load(f)
             return self.__json_output
-        except FileNotFoundError:
-            print(f'File {file} not found')
+        except Exception as e:
+            print(f'File {file} not found ({e})')
             return None
 
     def read_csv(self, file: str):
         try:
             self.__csv_output = pd.read_csv(file)
             return self.__csv_output
-        except FileNotFoundError:
-            print(f'File {file} not found')
+        except Exception as e:
+            print(f'File {file} not found ({e})')
             return None
