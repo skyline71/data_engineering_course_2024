@@ -162,4 +162,4 @@ cython_debug/
 #.idea/
 
 # Configuration settings
-.config/global_config.py
+config/global_config.py
