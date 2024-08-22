@@ -2,6 +2,9 @@ import yaml
 import json
 import pandas as pd
 
+import sys
+sys.path.append('..')
+
 
 class FileReader:
     __yaml_output: list
