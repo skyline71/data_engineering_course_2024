@@ -163,3 +163,4 @@ cython_debug/
 
 # Configuration settings
 config/global_config.py
+SQLAlchemy/config.py
