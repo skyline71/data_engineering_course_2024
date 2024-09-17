@@ -1,13 +1,7 @@
-from datetime import datetime, UTC
-import pytz
+import pandas as pd
+import sys
+sys.path.append('..')
 
-
-date = datetime.now(UTC).replace(microsecond=0, tzinfo=None)
-new_date = date.astimezone(pytz.timezone('Europe/Moscow'))
-
-date1 = datetime.now()
-
-print(date)
-print(new_date)
-
-print(date1.replace(microsecond=0))
+df = pd.read_csv('Utils/C_2024-09-16 22-46-35.csv')
+for index, record in df.iterrows():
+    print(record['date'])
